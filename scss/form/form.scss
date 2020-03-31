@@ -1,0 +1,68 @@
+.form-feedback {
+    position: relative;
+    .container {
+        padding: 90px 0;
+        @media (max-width: 990px) {
+            padding: 60px 0;
+        }
+    }
+    .form-feedback-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 2;
+        &::before {
+            content: url(../img/form/contact-form-bg.png);
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+        }
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    input {
+        opacity: .6;
+    }
+    textarea {
+        height: 300px;
+        opacity: .6;
+        @media (max-width: 990px) {
+            height: 200px;
+        }
+    }
+}
+
+input,textarea {
+    border: 1px solid #d1d1d1;
+    color: #8c8c8c;
+    padding: 10px 20px;
+}
+
+::-webkit-input-placeholder {
+    font: .87rem 'Open Sans', sans-serif;
+    font-style: italic;
+}
+::-moz-placeholder          {
+    font: .87rem 'Open Sans', sans-serif;
+    font-style: italic;
+}/* Firefox 19+ */
+:-moz-placeholder           {
+    font: .87rem 'Open Sans', sans-serif;
+    font-style: italic;
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+    font: .87rem 'Open Sans', sans-serif;
+    font-style: italic;
+}

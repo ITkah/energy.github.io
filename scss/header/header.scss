@@ -1,0 +1,135 @@
+header {
+    background: #333333;
+    padding: 0 30px;
+    @media (max-width: 990px) {
+        position: fixed;
+        z-index: 999;
+        padding: 0 20px;
+        width: 100%;
+        transition: .3s;
+        box-sizing: border-box;
+        top: 0;
+    }
+    .container {
+        padding: 30px 0;
+        @media (max-width: 990px) {
+            padding: 20px 0;
+        }
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-box {
+        img {
+            height: 40px;
+            @media (max-width: 990px) {
+                height: 35px;
+            }
+        }
+    }
+}
+
+.menu-btn {
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+        height: 35px;
+    }
+}
+
+main {
+    @media (max-width: 990px) {
+        margin-top: 60px;
+    }
+}
+
+.header-feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        display: none;
+    }
+}
+
+.header-feedback-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    i {
+        margin-right: 10px;
+        font-size: 25px;
+        border: solid 2px #9cc8d8;
+        color: #9cc8d8;
+        padding: 10px 15px;
+    }
+}
+
+.header-link {
+    color: #fff;
+}
+
+.header-feedback-info {
+    display: flex;
+    flex-direction: column;
+    .header-link:first-child{
+        font: 1.2rem 'Open Sans', sans-serif;
+        transition: .3s;
+        &:hover {
+            color: #9cc8d8;
+        }
+    }
+    .header-link:last-child{
+        font: .87rem 'Open Sans', sans-serif;
+        opacity: .8;
+        transition: .3s;
+        &:hover {
+            color: #9cc8d8;
+        }
+    }
+}
+
+nav {
+    background: #9cc8d8;
+    @media (max-width: 990px) {
+        display: none;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: 80px;
+        box-sizing: border-box;
+    }
+    ul {
+        display: flex;
+        @media (max-width: 990px) {
+            flex-direction: column;
+        }
+        li:first-child{
+            a {
+                padding-left: 0;
+                @media (max-width: 990px) {
+                    padding: 15px 0;
+                }
+            }
+        }
+        li {
+            a {
+                display: block;
+                padding: 20px;
+                color: #333333;
+                text-transform: uppercase;
+                transition: .3s;
+                font: bold 1rem 'Open Sans', sans-serif;
+                @media (max-width: 990px) {
+                    padding: 15px 0;
+                }
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

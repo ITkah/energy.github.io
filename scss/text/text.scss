@@ -1,0 +1,13 @@
+.title-sm {
+    font: bold 2rem 'Open Sans', sans-serif;
+    color: #333333;
+    @media (max-width: 990px) {
+        font-size: 1.4rem;
+    }
+}
+
+.text-sm {
+    font: .87rem 'Open Sans', sans-serif;
+    color: #8c8c8c;
+    line-height: 1.6;
+}

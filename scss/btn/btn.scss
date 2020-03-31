@@ -1,0 +1,13 @@
+.btn-blue {
+    background: #9cc8d8;
+    padding: 8px 20px;
+    color: #333333;
+    text-align: center;
+    display: inline-block;
+    font: 500 1.2rem 'Open Sans', sans-serif;
+    transition: .3s;
+    &:hover {
+        background: #333333;
+        color: #9cc8d8;
+    }
+}
