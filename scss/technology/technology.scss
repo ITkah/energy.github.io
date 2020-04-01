@@ -79,3 +79,67 @@
         margin-bottom: 40px;
     }
 }
+
+
+.technology-post {
+    .tabs {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 30px;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .tabs__caption {
+        li {
+            margin-bottom: 15px;
+            font: 500 1rem 'Open Sans', sans-serif;
+        }
+        li.active {
+            font-weight: bold;
+        }
+    }
+}
+
+.tabs__content {
+    display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+    display: block; /* по умолчанию показываем нужный блок */
+}
+
+.wrap-1 {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.wrap-2 {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.technology-post-wrap {
+    a {
+        margin-top: 30px;
+    }
+    .technology-img-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .title-sm {
+        margin-bottom: 30px;
+    }
+}

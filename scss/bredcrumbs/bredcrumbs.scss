@@ -1,0 +1,48 @@
+.bredcrumbs {
+    background: url(../img/bredcrumbs/breadcrumbs.jpg) no-repeat center center;
+    background-size: cover;
+    .container{ 
+        padding: 60px 0;
+        @media (max-width: 576px) {
+            padding: 50px 0;
+        }
+    }
+}
+
+.bredcrumbs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 576px) {
+        flex-direction: column;
+    }
+    .bredcrumbs-title {
+        @media (max-width: 576px) {
+            margin-bottom: 10px;
+        }
+        p {
+            font: bold 1.75rem 'Open Sans', sans-serif;
+            color: #fff;
+        }
+    }
+    .bredcrumbs-box {
+        span {
+            a {
+                font: 300 .95rem 'Open Sans', sans-serif;
+                color: #fff;
+                margin-right: 5px;
+                opacity: .9;
+                &::after {
+                    content: '/';
+                    position: relative;
+                    left: 5px;
+                    color: #9cc8d8;
+                }
+            }
+        }
+        span {
+            font: 300 1rem 'Open Sans', sans-serif;
+            color: #fff;
+        }
+    }
+}
