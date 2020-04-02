@@ -140,6 +140,8 @@ nav {
     width: 100%;
     z-index: 99;
     top: 0;
+    left: 0;
+    box-sizing: border-box;
     @media (max-width: 990px) {
         display: none;
         position: fixed;

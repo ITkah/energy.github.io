@@ -3,7 +3,7 @@ $(document).ready(function() {
         $("nav").slideToggle(200);
     });
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 110) {
             $('nav').addClass("fixed-header");
         
         } else {

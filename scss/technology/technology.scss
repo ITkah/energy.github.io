@@ -86,7 +86,7 @@
 .technology-post {
     .tabs {
         display: grid;
-        grid-template-columns: 1fr 5fr;
+        grid-template-columns: 2fr 7fr;
         grid-gap: 30px;
         @media (max-width: 990px) {
             grid-template-columns: 1fr;
@@ -95,23 +95,24 @@
     .tabs__caption {
         li {
             font: 500 1rem 'Open Sans', sans-serif;
-            background: #9cc8d8;
             padding: 8px 20px;
-            color: #333333;
-            text-align: center;
+            text-align: left;
             display: block;
             font: 500 1.2rem 'Open Sans', sans-serif;
             transition: .3s;
             cursor: pointer;
+            background: transparent;
+            color: #8c8c8c;
+            box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
             &:hover {
                 background: #333333;
                 color: #9cc8d8;
             }
         }
         li.active {
-            background: transparent;
-            color: #8c8c8c;
-            box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75);
+            color: #333333;
+            background: #9cc8d8;
+            box-shadow: none;
         }
     }
 }
@@ -124,9 +125,9 @@
     position: fixed;
     top: 100px;
     transition: .3s;
-    width: 190px;
+    width: 255px;
     @media (max-width: 1200px) {
-        width: 160px;
+        width: 200px;
     }
     @media (max-width: 990px) {
         width: auto;
@@ -275,6 +276,7 @@
         }
     }
     .technology-box-advanture {
+        box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
         position: relative;
         padding: 40px 30px;
         border-radius: 15px;

@@ -163,7 +163,10 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 99;
-  top: 0; }
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   @media (max-width: 990px) {
     .fixed-header {
       display: none;
@@ -427,7 +430,7 @@ nav {
 
 .technology-post .tabs {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 2fr 7fr;
   grid-gap: 30px; }
   @media (max-width: 990px) {
     .technology-post .tabs {
@@ -435,25 +438,27 @@ nav {
 
 .technology-post .tabs__caption li {
   font: 500 1rem 'Open Sans', sans-serif;
-  background: #9cc8d8;
   padding: 8px 20px;
-  color: #333333;
-  text-align: center;
+  text-align: left;
   display: block;
   font: 500 1.2rem 'Open Sans', sans-serif;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  cursor: pointer; }
+  cursor: pointer;
+  background: transparent;
+  color: #8c8c8c;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
+          box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2); }
   .technology-post .tabs__caption li:hover {
     background: #333333;
     color: #9cc8d8; }
 
 .technology-post .tabs__caption li.active {
-  background: transparent;
-  color: #8c8c8c;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75);
-          box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75); }
+  color: #333333;
+  background: #9cc8d8;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .tabs-cap-wrap {
   -webkit-transition: .3s;
@@ -466,10 +471,10 @@ nav {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  width: 190px; }
+  width: 255px; }
   @media (max-width: 1200px) {
     .tabs__caption-fixed {
-      width: 160px; } }
+      width: 200px; } }
   @media (max-width: 990px) {
     .tabs__caption-fixed {
       width: auto;
@@ -628,6 +633,8 @@ nav {
     border-radius: 5px;
     font: 1rem 'Open Sans', sans-serif; }
   .technology-advanture .technology-box-advanture {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+            box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
     position: relative;
     padding: 40px 30px;
     border-radius: 15px;
