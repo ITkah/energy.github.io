@@ -165,11 +165,6 @@ nav {
   width: 100%;
   z-index: 99;
   top: 0; }
-  .fixed-header a {
-    padding: 10px 20px; }
-    @media (max-width: 990px) {
-      .fixed-header a {
-        padding: 15px 0; } }
   @media (max-width: 990px) {
     .fixed-header {
       display: none;
@@ -258,11 +253,18 @@ nav {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .main-slider-box .btn-blue {
+    position: relative;
+    z-index: 99; }
 
 .main-slider {
   margin-bottom: -30px; }
   .main-slider .slick-dots {
-    bottom: 30px; }
+    bottom: 30px;
+    width: 100px; }
+    @media (max-width: 990px) {
+      .main-slider .slick-dots {
+        width: 100%; } }
   .main-slider .slider-title {
     margin-bottom: 20px;
     font: bold 2.2rem 'Open Sans', sans-serif;
@@ -326,7 +328,8 @@ nav {
     color: #fff; }
 
 .technology {
-  background: url(../img/technology/technology-bg.png) no-repeat center center fixed; }
+  background: url(../img/technology/technology-bg.png) no-repeat center center fixed;
+  background-size: cover; }
   .technology .container {
     padding: 80px 0; }
     @media (max-width: 990px) {
@@ -431,11 +434,24 @@ nav {
       grid-template-columns: 1fr; } }
 
 .technology-post .tabs__caption li {
-  margin-bottom: 15px;
-  font: 500 1rem 'Open Sans', sans-serif; }
+  margin-bottom: 5px;
+  font: 500 1rem 'Open Sans', sans-serif;
+  background: #9cc8d8;
+  padding: 8px 20px;
+  color: #333333;
+  text-align: center;
+  display: block;
+  font: 500 1.2rem 'Open Sans', sans-serif;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .technology-post .tabs__caption li:hover {
+    background: #333333;
+    color: #9cc8d8; }
 
 .technology-post .tabs__caption li.active {
-  font-weight: bold; }
+  background: #333333;
+  color: #9cc8d8; }
 
 .tabs__content {
   display: none;
@@ -484,6 +500,22 @@ nav {
 
 .technology-post-wrap .title-sm {
   margin-bottom: 30px; }
+
+.short-info .container {
+  padding: 80px 0; }
+  @media (max-width: 990px) {
+    .short-info .container {
+      padding: 60px 0; } }
+
+.short-info .technology-box-title {
+  text-align: center; }
+
+.short-info .title-sm {
+  margin-bottom: 15px; }
+
+.short-info .text-sm {
+  max-width: 600px;
+  margin: 0 auto; }
 
 .offer .container {
   padding: 80px 0; }

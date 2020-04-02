@@ -140,12 +140,6 @@ nav {
     width: 100%;
     z-index: 99;
     top: 0;
-    a {
-        padding: 10px 20px;
-        @media (max-width: 990px) {
-            padding: 15px 0;
-        }
-    }
     @media (max-width: 990px) {
         display: none;
         position: fixed;

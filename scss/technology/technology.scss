@@ -1,5 +1,6 @@
 .technology {
     background: url(../img/technology/technology-bg.png) no-repeat center center fixed;
+    background-size: cover;
     .container {
         padding: 80px 0;
         @media (max-width: 990px) {
@@ -92,11 +93,23 @@
     }
     .tabs__caption {
         li {
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             font: 500 1rem 'Open Sans', sans-serif;
+            background: #9cc8d8;
+            padding: 8px 20px;
+            color: #333333;
+            text-align: center;
+            display: block;
+            font: 500 1.2rem 'Open Sans', sans-serif;
+            transition: .3s;
+            &:hover {
+                background: #333333;
+                color: #9cc8d8;
+            }
         }
         li.active {
-            font-weight: bold;
+            background: #333333;
+            color: #9cc8d8;
         }
     }
 }
@@ -141,5 +154,24 @@
     }
     .title-sm {
         margin-bottom: 30px;
+    }
+}
+
+.short-info {
+    .container {
+        padding: 80px 0;
+        @media (max-width: 990px) {
+            padding: 60px 0;
+        }
+    }
+    .technology-box-title {
+        text-align: center;
+    }
+    .title-sm {
+        margin-bottom: 15px;
+    }
+    .text-sm {
+        max-width: 600px;
+        margin: 0 auto;
     }
 }

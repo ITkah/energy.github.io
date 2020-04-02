@@ -15,12 +15,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    .btn-blue {
+        position: relative;
+        z-index: 99;
+    }
 }
 
 .main-slider {
     margin-bottom: -30px;
     .slick-dots {
         bottom:30px;
+        width: 100px;
+        @media (max-width: 990px) {
+            width: 100%;
+        }
     }
     .slider-title {
         margin-bottom: 20px;
