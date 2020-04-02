@@ -13,6 +13,7 @@
     }
     .about-box-title {
         margin-bottom: 20px;
+        text-align: center;
     }
     a {
         color: #fff;
@@ -40,7 +41,7 @@
     }
 }
 
-.about-section-box:last-child{
+.about-section-box:last-child {
     display: grid;
     grid-gap: 40px;
     grid-template-columns: 1fr 3fr;
@@ -51,7 +52,7 @@
     img {
         max-width: 100%;
         height: auto;
-    } 
+    }
     .img-box {
         @media (max-width: 990px) {
             margin-top: 40px;

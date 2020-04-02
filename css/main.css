@@ -1279,7 +1279,8 @@ input, textarea {
   margin-bottom: 30px; }
 
 .about-section .about-box-title {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: center; }
 
 .about-section a {
   color: #fff;
