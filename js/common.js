@@ -23,4 +23,10 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 3000
     });
+    $('.single-gallery').slick({
+        infinite: true,
+        dots: true,
+        arrows: false,
+        margin: 10
+    });
 });

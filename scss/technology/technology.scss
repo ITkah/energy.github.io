@@ -88,7 +88,7 @@
         display: grid;
         grid-template-columns: 1fr 5fr;
         grid-gap: 30px;
-        @media (max-width: 768px) {
+        @media (max-width: 990px) {
             grid-template-columns: 1fr;
         }
     }
@@ -117,10 +117,14 @@
 }
 
 .tabs__content {
-    display: none; /* по умолчанию прячем все блоки */
+    opacity: 0;
+    position: absolute;
+    z-index: -2;
 }
 .tabs__content.active {
-    display: block; /* по умолчанию показываем нужный блок */
+    opacity: 1;
+    z-index: 1;
+    position: relative;
 }
 
 .wrap-1 {
@@ -142,11 +146,13 @@
         display: grid;
         grid-template-columns: 2fr 4fr;
         grid-gap: 30px;
+        margin-bottom: 40px;
         @media (max-width: 990px) {
             grid-template-columns: 1fr;
         }  
     }
 }
+
 
 .wrap-2 {
     .technology-post-wrap:first-child{
@@ -162,6 +168,7 @@
         display: grid;
         grid-template-columns: 4fr 2fr;
         grid-gap: 30px;
+        margin-bottom: 40px;
         @media (max-width: 990px) {
             grid-template-columns: 1fr;
         } 
@@ -208,4 +215,63 @@
         max-width: 600px;
         margin: 0 auto;
     }
+}
+
+.technology-img-box {
+    position: relative;
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-gallery {
+    margin-top: 40%;
+    position: absolute;
+    height:180px;
+    max-width: 330px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+    }
+    .slick-dots li button:before {
+        font-size: 30px;
+        color: #9cc8d8;
+    }
+    .slick-slide {
+        margin: 0 5px;
+    }
+    @media (max-width: 990px) {
+        margin: 0;
+        height: auto;
+        max-width: auto;
+        position: relative;
+    }
+    .slick-dotted.slick-slider {
+        margin: 0;
+    }
+    img {
+        height:165px;
+        max-width: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 999;
+    }
+}
+
+.simple-wrap {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 30px;
+    margin-bottom: 40px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    } 
+ 
+   
 }
