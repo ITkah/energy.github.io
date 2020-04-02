@@ -463,21 +463,45 @@ nav {
   display: block;
   /* по умолчанию показываем нужный блок */ }
 
-.wrap-1 {
+.wrap-1 .technology-post-wrap:first-child {
   display: grid;
   grid-template-columns: 4fr 2fr;
-  grid-gap: 30px; }
+  grid-gap: 30px;
+  margin-bottom: 40px; }
   @media (max-width: 990px) {
-    .wrap-1 {
+    .wrap-1 .technology-post-wrap:first-child {
       grid-template-columns: 1fr; } }
+  @media (max-width: 990px) {
+    .wrap-1 .technology-post-wrap:first-child .technology-img-box {
+      grid-row-start: 1; } }
 
-.wrap-2 {
+.wrap-1 .technology-post-wrap:last-child {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px; }
   @media (max-width: 990px) {
-    .wrap-2 {
+    .wrap-1 .technology-post-wrap:last-child {
       grid-template-columns: 1fr; } }
+
+.wrap-2 .technology-post-wrap:first-child {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  margin-bottom: 40px; }
+  @media (max-width: 990px) {
+    .wrap-2 .technology-post-wrap:first-child {
+      grid-template-columns: 1fr; } }
+
+.wrap-2 .technology-post-wrap:last-child {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-gap: 30px; }
+  @media (max-width: 990px) {
+    .wrap-2 .technology-post-wrap:last-child {
+      grid-template-columns: 1fr; } }
+  @media (max-width: 990px) {
+    .wrap-2 .technology-post-wrap:last-child .technology-img-box {
+      grid-row-start: 1; } }
 
 .technology-post-wrap a {
   margin-top: 30px; }
