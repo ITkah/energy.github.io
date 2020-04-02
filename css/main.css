@@ -361,7 +361,8 @@ nav {
         margin-bottom: 40px; } }
     .technology .technology-box-title .title-sm {
       margin-bottom: 15px; }
-    .technology .technology-box-title .text-sm, .technology .technology-box-title .title-sm {
+    .technology .technology-box-title .text-sm,
+    .technology .technology-box-title .title-sm {
       color: #fff;
       text-align: center; }
 
@@ -465,16 +466,21 @@ nav {
   -o-transition: .3s;
   transition: .3s; }
 
+.tabs__caption {
+  position: relative; }
+
 .tabs__caption-fixed {
   position: fixed;
   top: 100px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  width: 255px; }
-  @media (max-width: 1200px) {
+  width: 278px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media (max-width: 1280px) {
     .tabs__caption-fixed {
-      width: 200px; } }
+      width: 245px; } }
   @media (max-width: 990px) {
     .tabs__caption-fixed {
       width: auto;
