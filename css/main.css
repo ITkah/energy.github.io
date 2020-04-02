@@ -416,6 +416,7 @@ nav {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    opacity: .85;
     text-align: center; }
     @media (max-width: 990px) {
       .technology-wrap .technology-box {
@@ -444,7 +445,8 @@ nav {
   font: 500 1.2rem 'Open Sans', sans-serif;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  cursor: pointer; }
   .technology-post .tabs__caption li:hover {
     background: #333333;
     color: #9cc8d8; }
@@ -1201,7 +1203,8 @@ footer {
   font: 500 1.2rem 'Open Sans', sans-serif;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  cursor: pointer; }
   .btn-blue:hover {
     background: #333333;
     color: #9cc8d8; }
